@@ -1,0 +1,65 @@
+{
+  "bounds": [
+    -3.6,
+    -4.8,
+    5.8,
+    3.6
+  ],
+  "center": [
+    0,
+    0,
+    6
+  ],
+  "format": "png8",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=aea +lat_1=34 +lat_2=40.5 +lat_0=0 +lon_0=-120 +x_0=0 +y_0=-4000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "extent": [
+        -179.99999999990004,
+        -85.051,
+        180,
+        83.63410065282281
+      ],
+      "id": "ne10madmin1statespro",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/alan/github/natural-earth-vector/10m_cultural/ne_10m_admin_1_states_provinces_lakes_shp.shp"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "ne10madmin1statespro"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -125.5,
+        31.5,
+        -112.50000029057264,
+        42.49999975413084
+      ],
+      "id": "threehour20171010010",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/alan/Documents/stamenlocal/sf_smoke/new_smoke/three_hour_REPLACESTRING.tiff"
+      },
+      "layer": null,
+      "srs-name": "WGS84",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "advanced": {},
+      "name": "threehour20171010010"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "sf_smoke",
+  "description": ""
+}
