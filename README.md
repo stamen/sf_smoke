@@ -5,6 +5,8 @@ More info in this Medium post: [The fire this time, from San Francisco](https://
 
 The end result of following these steps will be an animated gif like this one: [https://twitter.com/stamen/status/919008091017854976](https://twitter.com/stamen/status/919008091017854976)
 
+![Animated gif of smoke from California wildfires](sf_smoke.gif?raw=true)
+
 Downloading files:
 
 ```
