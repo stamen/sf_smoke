@@ -1,6 +1,10 @@
 # sf_smoke
 Notes for creating an animated gif of California wildfires
 
+More info in this Medium post: [The fire this time, from San Francisco](https://hi.stamen.com/the-fire-this-time-from-san-francisco-95de4e6553a2)
+
+The end result of following these steps will be an animated gif like this one: [https://twitter.com/stamen/status/919008091017854976](https://twitter.com/stamen/status/919008091017854976)
+
 Downloading files:
 
 ```
@@ -32,8 +36,11 @@ But if we want to project them:
   done
 ```
 
-Then I opened up a tilemill project and projected them all to EPSG:3310, and added some state boundaries.
-Now to do the scripted tilemill:
+Then I opened up a tilemill project (download & install tilemill from [the tilemill project](https://github.com/tilemill-project/tilemill)) and projected them all to EPSG:3310, and added some state boundaries (natural earth, from [their download site](https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_1_states_provinces_lakes.zip) or from [their github](https://github.com/nvkelso/natural-earth-vector/)).
+
+Edit the tilemill template [project.mml.template](https://github.com/stamen/sf_smoke/blob/master/project.mml.template) as needed for the paths on your operating system)
+
+Now to do the scripted tilemill, which uses sed to edit the tilemill project template and replace the raster images for each frame:
 
 ```
   rm output*.png;
